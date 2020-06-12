@@ -13,7 +13,7 @@ $text_file = "C:\****************\do_not_delete.conf"
 # C:\Windows\SYSVOL\sysvol\loncc.local\scripts\
 $dst_folder = "C:\********************\dst_folder"
 # max number of wallpaper files. After this numer sequence will go back to 0. 
-$max_wallpaper_number = 7
+$max_wallpaper_number = [System.IO.Directory]::GetFiles("$wallpapers_path", "*.jpg").Count
 
 #Returns list of all file names of wallpapers in wallpapers_path 
 function All_Files_List {
@@ -88,15 +88,14 @@ function Main_Func {
         Read_Text_File
         # 
         If ($File_val -eq $max_wallpaper_number) 
-            {Write-Output "Found in file 7"
+            {Write-Output "Found maximum number in file -  $max_wallpaper_number"
             Copy_The_File $List_Of_Wallpepers[0].Name $wallpapers_path
             $List_Of_Wallpepers[0]
             Write_Text_File 0
             Write-Output "Done, new file copied"
             }
         # 
-        If ($File_val -le 6) 
-            {Write-Output "Less than 6"
+        Else {Write-Output "Less than $max_wallpaper_number"
             $n = [int]$File_val + 1
             Copy_The_File $List_Of_Wallpepers[$n].Name $wallpapers_path
             $str_n = [string]$n
