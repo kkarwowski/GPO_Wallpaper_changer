@@ -1,10 +1,7 @@
-# # # # # # # # # # # # # # # # # # # # # # # # # # # 
-#                                                   # 
-#           Wallpaper changing script                # 
-#                                                   # 
-#           by Chris May 2020                       # 
-#                                                   # 
-# # # # # # # # # # # # # # # # # # # # # # # # # # # 
+
+Wallpaper changing script 
+
+by Chris May 2020
 
 This script when run copies a new wallpaper .JPG to 
 C:\Windows\SYSVOL\sysvol\loncc.local\scripts\ which are
