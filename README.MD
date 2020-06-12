@@ -1,22 +1,10 @@
+If your company has a specific wallpaper which is displayed on all PCs in Domain - this script will cycle those wallpapers every time its run. You can have also "extra" wallpaper thrown in which is outside of regullar pool - for special occasions.
 
-Wallpaper changing script 
+Script keeps alphabetical sequence. 
 
-by Chris May 2020
+This script when run copies a new wallpaper .JPG to C:\Windows\SYSVOL\sysvol\loncc.local\scripts\ which are
+picked up by GPO script upon logging into PC/Laptop. It has a sequence built in of 0-(number of files in DIR) which is written to Do_not_delete.conf ( text file )
 
-This script when run copies a new wallpaper .JPG to 
-C:\Windows\SYSVOL\sysvol\loncc.local\scripts\ which are
-picked up by GPO script upon logging into PC/Laptop.
-It has a sequence built in of 0-7 which is written to
-Do_not_delete.conf ( text file ).  Here is a sequence:
-
-Community.JPG - 0
-Family.JPG - 1
-Humility.JPG - 2
-Integrity.JPG - 3
-Learning.jpg - 4
-Mission1.jpg - 5
-Ownership.JPG - 6 
-Respect.JPG - 7
 
 It is determined by alphabetical order. 
 To schedule for example weekly change of wallpaper set up on AD server in Task Scheduler a new task to call this script every week.
