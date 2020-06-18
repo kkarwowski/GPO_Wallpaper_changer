@@ -25,6 +25,6 @@ Make sure you save the file :)
 
 # Usage
 
-This script is the best run with Task Scheaduler on your DC - perhasp once every week or two? Please see [task_scheaduler.PNG](task_scheaduler.PNG) and [task_scheaduler_1.PNG](task_scheaduler_1).PNG screenshots which show correct set up in Task Scheaduler.
+This script is the best run with Task Scheaduler on your DC - perhasp once every week or two? Please see [task_scheaduler.PNG](task_scheaduler.PNG) and [task_scheaduler_1.PNG](task_scheaduler_1.PNG) screenshots which show correct set up in Task Scheaduler.
 
 
