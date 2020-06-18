@@ -1,7 +1,7 @@
 # VARIABLES 
 
 # path to folder with all 8 wallpapers
-# C:\Windows\SYSVOL\sysvol\loncc.local\WeekdlyDesktopScript\files
+# C:\Windows\SYSVOL\sysvol\***\
 $wallpapers_path = "C:\**********************"
 # name of the weekly wallpaper file 
 $dst_file_name = "weeklydesktop.JPG"
@@ -10,7 +10,7 @@ $extra_folder = "C:\**************\extra"
 # text file location which contains number of current wallpaper - DO NO DELETE
 $text_file = "C:\****************\do_not_delete.conf"
 # Destination folder which contains weeklydesktop.JPG file
-# C:\Windows\SYSVOL\sysvol\loncc.local\scripts\
+# C:\Windows\SYSVOL\sysvol\***\
 $dst_folder = "C:\********************\dst_folder"
 # max number of wallpaper files. After this numer sequence will go back to 0. 
 $max_wallpaper_number = [System.IO.Directory]::GetFiles("$wallpapers_path", "*.jpg").Count
